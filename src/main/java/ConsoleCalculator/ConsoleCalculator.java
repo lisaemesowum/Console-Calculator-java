@@ -8,19 +8,19 @@ public class ConsoleCalculator {
 
     //first
 //    the add method
-    public static int add (int a , int b){
+    public static double add (double  a , double  b){
         return a + b;
 //        System.out.println(4,5);
     }
 
 
 //    the subtract method
-    public static int subtract(int a , int b){
+    public static double  subtract(double  a , double  b){
         return a - b;
     }
 
 //    the multiplication method
-    public static int multiply(int a , int b){
+    public static double  multiply(double  a , double  b){
         return a * b;
     }
 
@@ -34,6 +34,20 @@ public class ConsoleCalculator {
         }
         return a /b;
     }
-
+//    modulus operator   % meaning “remainder.” in real calculator
+//    It returns the remainder of a division operation between two numbers.
+     public static double modulus(double a , double b){
+//        return a / b;
+    if(b == 0){
+        System.out.println("Error: Underfined");
+        return 0;
+    }
+    return a % b;
+}
+//real calculator we have changeSign +/-
+    //only take one parameter and just flip its sign
+public static double  changeSign(double  a , double  b){
+    return -a;
+}
 
 }
