@@ -1,53 +1,51 @@
 package ConsoleCalculator;
 
-
 import java.util.Scanner;
 
-public class ConsoleCalculator {
-    Scanner scan = new Scanner(System.in);
+import static ConsoleCalculator.ConsoleCalculator.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
 
-    //first
-//    the add method
-    public static double add (double  a , double  b){
-        return a + b;
-//        System.out.println(4,5);
-    }
+//        System.out.println(add(5,7));
+//        System.out.println(subtract(58888,6669));
+//        System.out.println(multiply(50,60));
+//        System.out.println( divide(10 , 0));
+
+//                                for the display
+        System.out.println("*************************Console Calculator ***********************************");
+//                                    Then the input area
+//                    To display emoji in HP  press windows key and the ; -(semicolon key) together;
+        System.out.println("Enter Your First Number:🔢");
+        int a = input.nextInt();
+
+        System.out.println("Enter Operator (+, -, *, /, % ) ");
+
+        System.out.println("Enter Your Second Number🔢");
+        int b = input.nextInt();
 
 
-//    the subtract method
-    public static double  subtract(double  a , double  b){
-        return a - b;
-    }
 
-//    the multiplication method
-    public static double  multiply(double  a , double  b){
-        return a * b;
-    }
 
-//    the division
-    //divide method doesn't check for division by zero, which will cause an ArithmeticException
-    public static double divide(double a , double b){
-//        return a / b;
-        if(b == 0){
-            System.out.println("Error: Underfined");
-            return 0;
-        }
-        return a /b;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
-//    modulus operator   % meaning “remainder.” in real calculator
-//    It returns the remainder of a division operation between two numbers.
-     public static double modulus(double a , double b){
-//        return a / b;
-    if(b == 0){
-        System.out.println("Error: Underfined");
-        return 0;
-    }
-    return a % b;
-}
-//real calculator we have changeSign +/-
-    //only take one parameter and just flip its sign
-public static double  changeSign(double  a , double  b){
-    return -a;
-}
 
 }
