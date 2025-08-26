@@ -18,7 +18,7 @@ public class Main {
 //                                    Then the input area
 //                    To display emoji in HP  press windows key and the ; -(semicolon key) together;
         System.out.println("Enter Your First Number🔢:");
-        double a = input.nextInt();
+        double a = input.nextInt();   
 
         System.out.println("Enter Operator (+, -, *, /, % ) ");
         String Operator = input.next();   //connecting the variable with the switch case
