@@ -13,6 +13,6 @@ Why Compile-Time Polymorphism?
 2:It keeps the code cleaner since I don’t need to write multiple differently-named methods for each data type.
 3:It shows how Java decides which method to call at compile time, based on the type of data provided.
 
-so i have method for int and double so the system will know wen to print double or int.
+so i have method for int and double so the system will know when to print double or int.
 
 so check out the code and see for your self.
